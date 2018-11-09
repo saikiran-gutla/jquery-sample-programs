@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".id").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#bhide").click(function(){
+        $("#hs").hide();
+    });
+});
+$(document).ready(function(){
+    $("#bshow").click(function(){
+        $("#hs").show();
+    });
+});
+</script>
+</head>
+<body>
+<!--to show and hide using a single button  i.e., TOGGLE-->
+<button>This is my toggle button to show/hide my paragraph</button>
+<p class="id">this is my paragraph 1.</p>
+<p class="id">this is my paragraph 2.</p>
+
+<!--to show and hide using different buttons--> 
+<button id="bhide">hide</button>
+<p id="hs">hide/show operation</p>
+<button id="bshow">show</button>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#p1").on({
+        mouseenter: function(){
+            $(this).css("background-color", "green");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "blue");
+        }, 
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }  ,
+        dblclick: function(){
+            $(this).css("background-color","red")
+        }
+        
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Click / move the mouse pointer on/over me.</p>
+
+</body>
+</html>

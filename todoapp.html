@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        var s="";
+        s = document.getElementById("text").value;
+        $("#task").before(s);
+       // $("#task").html("<br> </br>");
+        alert("TASK ADDED ");  
+    })
+        $("#done").click(function(){
+       //adding href tag  
+       // $("#task").html("<br></br>");
+       $("#task").append('<a href="#"value="done">done</a>').before("<br/>");
+        var done=document.createElement("a");
+        $("#task").after("");
+        //$("#task").html("<br></br>");
+        //$(this).html("<u></u>");        
+        alert("TASK DONE ");
+    });
+    $("a").click(function(){
+       $("#task").html("<a href> REMOVE</a>");
+        $(this).remove();
+    });
+});
+</script>
+</head>
+<body>
+<p id="test">type your <b>TASK</b> name in textbox.</p>
+<p>Name: <input type="text" id="text" placeholder="enter your task"></p>
+<input type="submit" id="btn1" value="Add task"></input>
+<h4>TASKS TO BE PERFORMED :</h4>
+<p id="task"></p>
+</body>
+</html>

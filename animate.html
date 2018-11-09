@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("div").animate({
+            height: 'toggle'
+        });
+    });
+});
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("div").animate({left: '250px'});
+    });
+});
+$(document).ready(function(){
+    $("#btn2").click(function(){
+        $("div").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+        });
+    });
+});
+</script> 
+</head>
+<body>
+        <p>ANIMATE</p>
+
+<p>Click the button multiple times to toggle the animation.</p>
+
+
+<button id="btn1">move left</button>
+<button id="btn2">fade</button>
+<button id="btn3">slideup</button>
+
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

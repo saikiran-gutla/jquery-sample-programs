@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+        <p>Input field: 
+            <input type="text" name="val" id="val" placeholder="enter some text"></p>
+        <button id="btn4">get Text</button>
+
+<p id="test1">VALUE:.</p>
+<p id="test2">This is another paragraph.</p>
+
+<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+<button id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
+<script>
+    
+    $(document).ready(function(){
+        var s;
+    $("#btn4").click(function(){
+        console.log(document.getElementById("val"));
+       +  //// i want my entered text to be displayed here
+        //txt=innerHTML=s;
+       $("#btn1").click(function(){
+        $("#test1").append(s);
+    });
+    $("#btn2").click(function(){
+        $("#test2").html("<b></u>Hello!</u></b>");
+    });
+    $("#btn3").click(function(){
+        $("#test3").val("welcome");
+    });
+    })
+});
+</script>
+</body>
+</html>
